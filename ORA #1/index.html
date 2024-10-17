@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tin tức</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="css/w3-theme.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Roboto", sans-serif;
+            }
+            .w3-sidebar {
+                z-index: 3;
+                width: 250px;
+                top: 43px;
+                bottom: 0;
+                height: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                <a class="w3-bar-item w3-button w3-theme-l1">
+                    <img src="images/logos/soict25.png" alt="Logo" style="height:20px; width:auto;">
+                </a>
+                <a href="course.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+                <a href="web_tech.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ Web</a>
+                <a href="student_info.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-emerald w3-animate-left" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <h4 class="w3-bar-item"><b>Tin tức</b></h4>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec1">Seminar khoa học tháng 9 năm 2024</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec2">Seminar khoa học tháng 8 năm 2024</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec3">Trao chứng chỉ cho sinh viên trợ giảng</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec4">Học bổng Samsung STP 2024 cho sinh viên Trường CNTT&TT</a>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
+
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="w3-main" style="margin-left: 250px;">
+            <div class="w3-row w3-padding-64" id="sec1">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Seminar khoa học tháng 9 năm 2024</h1>
+                    <p>
+                        Ngày 23/09/2024, Trường Công nghệ Thông tin và Truyền thông, ĐHBKHN hân hạnh đón tiếp TS. Phạm Văn Thuận tại Đại học Melbourne, bang Victoria, Úc tại buổi Seminar khoa học hàng tháng của Trường. 
+                        TS. Thuận cũng đồng thời là cựu giảng viên của bộ môn Kỹ thuật máy tính, nay là Khoa Kỹ thuật máy tính của Trường. Nghiên cứu của TS. Thuận tập trung vào các giải pháp nâng cao hiệu năng của Fuzzing. 
+                        Với sự hợp tác cùng các tổ chức chính phủ và doanh nghiệp lớn, nghiên cứu của ông đã được xuất bản trên nhiều tạp chí và hội nghị lớn. Ông cũng là đồng tác giả của hai bằng sáng chế cũng như hàng loạt công cụ kiểm thử tự động mã nguồn mở. 
+                        Các công cụ này đã được sử dụng để phát hiện ra hơn 100 lỗi bảo mật trên các hệ thống phần mềm phổ biến và quan trọng. Nghiên cứu của ông cũng được giới thiệu trên một số trang tin như Theregister.co.uk hay Securityweek.com.
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/news/seminar1.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64" id="sec2">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Seminar khoa học tháng 8 năm 2024</h1>
+                    <p>
+                        Ngày 19 tháng 8 năm 2024, tại Trường Công nghệ Thông tin và Truyền thông, Đại học Bách khoa Hà Nội, buổi seminar về “Thực tế hỗn hợp và cơ hội nghề nghiệp trong tương lai” (Immersive Technologies and Jobs of the Future) do Tiến sĩ Hoàng Thương, Phó trưởng khoa Khoa Công nghệ Thông tin của Đại học Deakin (Úc) trình bày đã thu hút sự quan tâm của nhiều nhà nghiên cứu, sinh viên và các chuyên gia trong lĩnh vực công nghệ.
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/news/seminar2.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64" id="sec3">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Trao chứng chỉ cho sinh viên trợ giảng</h1>
+                    <p>
+                        Vào buổi chiều ngày 25/9/2024, Trường Công nghệ Thông tin và Truyền thông đã tổ chức một buổi Trao Chứng chỉ TA cho sinh viên trợ giảng kỳ 2 năm học 2023-2024. 
+                        Xuyên suốt học kỳ, hoạt động trợ giảng rất sôi nổi với sự tham gia của 70 bạn sinh viên ưu tú và nhiệt tình. 
+                        Đến dự buổi lễ có sự tham gia của PGS. TS. Cao Tuấn Dũng, Phó Hiệu trưởng Trường CNTT&TT và TS. Trịnh Thành Trung, Phó trưởng Văn phòng Trường.
+                        Qua dịp gặp mặt này, thầy Cao Tuấn Dũng đã gửi lời cảm ơn chân thành tới các bạn sinh viên vì những đóng góp vào hoạt động giảng dạy của nhà trường, đồng thời lắng nghe ý kiến của các bạn sinh viên để hoạt động trợ giảng được phát triển tích cực hơn.
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                        <p class="w3-border w3-center w3-padding-large">
+                            <img src="images/news/ta1.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                        </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64" id="sec4">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Học bổng Samsung STP 2024 cho sinh viên Trường CNTT&TT</h1>
+                    <p>
+                        Chương trình học bổng tài năng Samsung STP được Samsung SRV mang đến cho các bạn sinh viên hệ đại học hoặc hệ thạc sỹ Trường CNTT&TT, Đại học BKHN nằm trong khuôn khổ hợp tác với Nhà trường.
+                    </p>
+                    <p>
+                        Năm 2024, chương trình học bổng tài năng Samsung STP đã quay trở lại với nhiều giá trị về tiền mặt và phần quà vô cùng hấp dẫn. 
+                        Đối tượng nhận học bổng là các sinh viên, học viên cao học dự kiến tốt nghiệp kỳ 2024.2 hoặc 2025.1. 
+                        Đặc biệt, các bạn sinh viên đã tham gia khóa học <strong>Thuật toán ứng dụng (hợp tác với Samsung)</strong>, mã học phần IT3680, sẽ được ưu tiên khi xét duyệt học bổng!
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/news/hobo1.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="w3-center w3-padding-32">
+                <div class="w3-bar">
+                    <a class="w3-button w3-theme-emerald w3-hover-light_emerald" href="#">1</a>
+                    <a class="w3-button w3-hover-emerald" href="#">2</a>
+                    <a class="w3-button w3-hover-emerald" href="#">3</a>
+                    <a class="w3-button w3-hover-emerald" href="#">4</a>
+                    <a class="w3-button w3-hover-emerald" href="#">5</a>
+                    <a class="w3-button w3-hover-emerald" href="#">&raquo;</a>
+                </div>
+            </div>
+
+            <footer id="myFooter">
+                <div class="w3-container w3-theme-dark_emerald ">
+                    <h4>&copy; 2024 ORA #1, IT4409, SoICT-HUST </h4>
+                </div>
+
+                <div class="w3-container w3-theme-l1">
+                    <p>Design by <a href="https://github.com/GiaHuyJQK1706" target="_blank">Gia-Huy Do</a></p>
+                </div>
+            </footer>
+
+            <!-- END MAIN -->
+        </div>
+
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === "block") {
+                    mySidebar.style.display = "none";
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = "block";
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+        </script>
+    </body>
+</html>

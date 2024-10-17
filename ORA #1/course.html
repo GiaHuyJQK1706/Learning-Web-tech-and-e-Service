@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Thông tin môn học IT4409</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="css/w3-theme.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Roboto", sans-serif;
+            }
+            .w3-sidebar {
+                z-index: 3;
+                width: 250px;
+                top: 43px;
+                bottom: 0;
+                height: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">
+                    <img src="images/logos/soict25.png" alt="Logo" style="height:20px; width:auto;">
+                </a>
+                <a class="w3-bar-item w3-button w3-theme-l1">Thông tin môn học</a>
+                <a href="web_tech.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Các công nghệ Web</a>
+                <a href="student_info.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-emerald w3-animate-left" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <h4 class="w3-bar-item"><b>Thông tin môn học</b></h4>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec1">Thông tin chung</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec2">Mô tả môn học</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec3">Học phần tiên quyết/học trước/song hành</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec4">Nội dung kiến thức</a>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
+
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="w3-main" style="margin-left: 250px;">
+            <div class="w3-padding-64">
+                <div class="w3-container">
+                    <h1>Công nghệ Web và dịch vụ trực tuyến</h1>
+                </div>
+            </div>
+            <div>
+                <div class="w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/courses/it4409_1.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>
+                </div>
+            </div>
+            <div id="sec1">
+                <div class="w3-container">
+                    <h2 class="w3-text-teal">Thông tin chung</h2>
+                    <ul>
+                        <li><strong>Tên học phần:</strong> Công nghệ Web và dịch vụ trực tuyến</li>
+                        <li><strong>Mã học phần:</strong> IT4409</li>
+                        <li><strong>Khối lượng:</strong> 3(2-2-0-6)</li>
+                        <li><strong>Số tín chỉ:</strong> 3</li>
+                        <li><strong>Số tiết/tuần:</strong> 4</li>
+                        <li><strong>Giảng viên:</strong> Phạm Huy Hoàng</li>
+                        <li><strong>Độ khó môn học:</strong> Trung bình</li>
+                    </ul>                               
+                </div>
+            </div>
+
+            <div id="sec2">
+                <div class="w3-container">
+                    <h2 class="w3-text-teal">Mô tả môn học</h2>
+                    <p>
+                        Học phần cung cấp các kiến thức cần thiết để xây dựng và phát triển các ứng dụng, dịch vụ trực tuyến trên môi trường web. Sau khi học xong học phần này, sinh viên có khả năng:
+                    </p>
+                    <ul>
+                        <li>Có thể sử dụng một ngôn ngữ lập trình như JSP, PHP để phát triển ứng dụng web cho các lĩnh vực khác nhau như: hệ quản trị nội dung (CMS), cổng thông tin (Portal), hay các ứng dụng điện tử (eCommerce, eLearning, eGoverment,...)</li>
+                        <li>Nắm vững được các công nghệ web, các platform, framework hiện đang thịnh hành.</li>
+                    </ul>
+                    <p>
+                        Ngoài ra học phần cũng cung cấp cho sinh viên các kỹ năng làm việc nhóm, thuyết trình và thái độ cần thiết để làm việc và ứng dụng các kỹ thuật trong các dự án, công ty về phần mềm sau này.
+                    </p>
+                </div>
+            </div>
+
+            <div id="sec3">
+                <div class="w3-container">
+                    <h2 class="w3-text-teal">Học phần tiên quyết/học trước/song hành</h2>
+                    <ol>
+                        <li><h4>Học phần tiên quyết: Không</h4></li>
+                        <li><h4>Học phần học trước: </h4>
+                            <ul>
+                                <li><h6><strong>IT3090/IT3091/IT3094/IT3290:</strong> Cơ sở dữ liệu</h6></li>
+                                <li><h6><strong>IT3100/IT3103:</strong> Lập trình hướng đối tượng</h6></li>
+                            </ul>
+                        </li>
+                        <li><h4>Học phần song hành: Không</h4></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div id="sec4">
+                <div class="w3-container">
+                    <h2 class="w3-text-teal">Nội dung kiến thức</h2>
+                    <p>
+                        Kiến trúc ứng dụng web; Các công nghệ lập trình web HTML/CSS/JS, JSP, ASP, PHP, XML, Web Service, RSS,…; Các framework web nổi tiếng: Spring, Django, Laravel, NodeJS,...; Xây dựng hệ thống CMS; Xây dựng cổng thông tin (portal); Xây dựng các hệ thống thông tin điện tử (eCommerce, eLearning, eGoverment,...).
+                    </p>
+                </div>
+            </div>
+
+            <footer id="myFooter">
+                <div class="w3-container w3-theme-dark_emerald ">
+                    <h4>&copy; 2024 ORA #1, IT4409, SoICT-HUST </h4>
+                </div>
+
+                <div class="w3-container w3-theme-l1">
+                    <p>Design by <a href="https://github.com/GiaHuyJQK1706" target="_blank">Gia-Huy Do</a></p>
+                </div>
+            </footer>
+
+            <!-- END MAIN -->
+        </div>
+
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === "block") {
+                    mySidebar.style.display = "none";
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = "block";
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+        </script>
+    </body>
+</html>

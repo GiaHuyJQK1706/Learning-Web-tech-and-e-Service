@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Các công nghệ web nổi tiếng</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="css/w3-theme.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Roboto", sans-serif;
+            }
+            .w3-sidebar {
+                z-index: 3;
+                width: 250px;
+                top: 43px;
+                bottom: 0;
+                height: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">
+                    <img src="images/logos/soict25.png" alt="Logo" style="height:20px; width:auto;">
+                </a>
+                <a href="course.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin môn học</a>
+                <a class="w3-bar-item w3-button w3-theme-l1">Các công nghệ Web</a>
+                <a href="student_info.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin sinh viên</a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-emerald w3-animate-left" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <h4 class="w3-bar-item"><b>Các công nghệ web</b></h4>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec1">React</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec2">Angular</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec3">Vue.js</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec4">Spring boot</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec5">Express.js</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec6">Django</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sec7">.NET Core</a>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
+
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="w3-main" style="margin-left: 250px;">
+            <div class="w3-row w3-padding-64" id="sec1">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">React</h1>
+                    <p>
+                        React, được phát triển bởi Facebook, là một thư viện JavaScript thường được xem như một framework frontend do nó cung cấp nhiều tính năng giúp phát triển giao diện người dùng (UI). React đặc biệt nổi tiếng với kiến trúc component-based (dựa trên các thành phần tái sử dụng), cho phép chia giao diện thành nhiều phần nhỏ, độc lập và dễ quản lý. Một điểm mạnh của React là cơ chế Virtual DOM: thay vì cập nhật trực tiếp DOM thật (thao tác tốn kém tài nguyên), nó tạo ra một bản sao ảo và chỉ đồng bộ những thay đổi cần thiết, giúp cải thiện hiệu suất. React cũng có một hệ sinh thái lớn với nhiều công cụ như React Router (quản lý điều hướng) và Redux (quản lý trạng thái), khiến nó trở thành lựa chọn hàng đầu cho nhiều ứng dụng web hiện đại.
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/frameworks/fw1.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64" id="sec2">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Angular</h1>
+                    <p>
+                        Angular là một framework mạnh mẽ cho frontend, được phát triển và duy trì bởi Google. Khác với React, Angular là một giải pháp toàn diện với nhiều công cụ tích hợp sẵn, như routing, dependency injection (tiêm phụ thuộc), và quản lý dữ liệu hai chiều (two-way data binding). Angular sử dụng TypeScript, một phiên bản mở rộng của JavaScript, giúp mã nguồn an toàn và dễ bảo trì hơn. Với kiến trúc dựa trên module, Angular rất phù hợp cho các dự án lớn và phức tạp, nơi cần kiểm soát tốt quy trình phát triển. Ngoài ra, nó hỗ trợ xây dựng các ứng dụng đa nền tảng, chẳng hạn như Progressive Web Apps (PWA) và ứng dụng di động thông qua Ionic.
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/frameworks/fw2.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64" id="sec3">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Vue.js</h1>
+                    <p>
+                        Vue.js, được tạo bởi Evan You, là một framework frontend nổi tiếng với sự nhẹ nhàng và dễ học. Vue tập trung vào việc xây dựng giao diện tương tác với cú pháp đơn giản và trực quan. Giống React, Vue cũng dựa trên cơ chế component, cho phép tái sử dụng mã hiệu quả. Một đặc điểm nổi bật khác của Vue là khả năng áp dụng linh hoạt: bạn có thể dùng nó cho từng phần nhỏ trong trang web hoặc mở rộng thành các ứng dụng lớn. Vue Router và Vuex là những công cụ phổ biến trong hệ sinh thái Vue, giúp quản lý điều hướng và trạng thái ứng dụng. Ngoài ra, Vue được đánh giá cao vì tài liệu rõ ràng và cộng đồng thân thiện, khiến nó trở thành lựa chọn lý tưởng cho cả người mới bắt đầu và các dự án phức tạp.
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                        <p class="w3-border w3-center w3-padding-large">
+                            <img src="images/frameworks/fw3.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                        </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64" id="sec4">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Spring boot</h1>
+                    <p>
+                        Spring Boot là một framework backend dựa trên <strong>Java</strong>, được xây dựng trên nền tảng của Spring Framework, nhằm đơn giản hóa quá trình phát triển ứng dụng Java. Spring Boot giúp các lập trình viên dễ dàng tạo ra các ứng dụng độc lập, có thể chạy ngay mà không cần cấu hình phức tạp. Một trong những điểm mạnh của Spring Boot là khả năng tự động cấu hình (auto-configuration), cho phép nó tự động thiết lập các thành phần cần thiết cho ứng dụng dựa trên các thư viện có sẵn trong classpath. Spring Boot hỗ trợ tích hợp với nhiều công nghệ và dịch vụ khác nhau như RESTful API, Spring Data JPA (để làm việc với cơ sở dữ liệu), và Spring Security (để bảo mật ứng dụng). Ngoài ra, nó cung cấp các công cụ như Spring Boot Starter giúp dễ dàng cấu hình và kết nối với các dịch vụ bên ngoài. 
+                        Nhờ vào những tính năng mạnh mẽ và sự dễ sử dụng, Spring Boot trở thành lựa chọn phổ biến cho các ứng dụng web và dịch vụ microservices, giúp tăng tốc quy trình phát triển và cải thiện tính mở rộng của ứng dụng.
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/frameworks/fw4.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64" id="sec5">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Express.js</h1>
+                    <p>
+                        Express.js là một framework backend tối giản dành cho <strong>Node.js</strong>, cung cấp công cụ mạnh mẽ để xây dựng API và ứng dụng web nhanh chóng. Thiết kế của Express rất đơn giản và linh hoạt, cho phép các nhà phát triển mở rộng ứng dụng bằng cách sử dụng middleware—các phần mềm trung gian thực hiện xử lý trước hoặc sau các yêu cầu HTTP. Nhờ tính mở rộng tốt và cú pháp dễ hiểu, Express là lựa chọn phổ biến cho các ứng dụng RESTful và microservices. Ngoài ra, nó cũng là nền tảng cho nhiều framework phức tạp hơn, như Next.js (cho SSR - server-side rendering).
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/frameworks/fw5.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64" id="sec6">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Django</h1>
+                    <p>
+                        Django là một framework backend web mạnh mẽ được viết bằng <strong>Python</strong>, tập trung vào tốc độ phát triển và bảo mật. Django nổi bật với triết lý "batteries-included" (tích hợp sẵn mọi thứ cần thiết), cung cấp nhiều công cụ như ORM (Object-Relational Mapping) để làm việc với cơ sở dữ liệu, hệ thống xác thực người dùng, và giao diện quản trị mặc định. Django rất phù hợp cho các ứng dụng lớn và phức tạp cần quản lý nhiều dữ liệu và người dùng. Ngoài ra, nó cũng cung cấp nhiều công cụ bảo mật như CSRF protection và SQL injection protection, khiến nó được ưa chuộng cho các ứng dụng cần độ bảo mật cao, chẳng hạn như nền tảng thương mại điện tử và các hệ thống quản lý nội dung.
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/frameworks/fw6.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="w3-row w3-padding-64" id="sec7">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">.NET Core</h1>
+                    <p>
+                        .NET Core là một framework backend phiên bản nhẹ, đa nền tảng của framework <strong>.NET - framework dựa trên C#</strong>, được phát triển bởi Microsoft để đáp ứng nhu cầu xây dựng ứng dụng hiện đại trên nhiều hệ điều hành khác nhau, bao gồm Windows, macOS và Linux. Sự ra đời của .NET Core đã mang lại nhiều lợi ích cho lập trình viên và các doanh nghiệp, đặc biệt trong bối cảnh ngày càng tăng của các ứng dụng web và dịch vụ đám mây.
+                        .NET Core có một cộng đồng lớn và đang phát triển, với rất nhiều tài liệu, ví dụ và thư viện mã nguồn mở sẵn có, giúp lập trình viên dễ dàng tìm kiếm hỗ trợ và học hỏi. Ngoài ra, .NET Core cũng được tối ưu hóa cho các môi trường đám mây, cho phép tích hợp dễ dàng với các dịch vụ Azure, giúp các ứng dụng hoạt động hiệu quả và có khả năng mở rộng. 
+                        Cuối cùng, một trong những yếu tố quan trọng nhất của .NET Core là sự phát triển liên tục từ Microsoft, với các phiên bản mới được phát hành thường xuyên, mang lại nhiều tính năng mới và cải tiến hiệu suất, đảm bảo rằng .NET Core vẫn là một trong những lựa chọn hàng đầu cho việc phát triển ứng dụng hiện đại.
+                    </p>
+                </div>
+                <div class="w3-third w3-container">
+                    <p class="w3-border w3-center w3-padding-large">
+                        <img src="images/frameworks/fw7.jpeg" alt="Ảnh minh họa" style="width: 100%; height: auto;">
+                    </p>                    
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="w3-center w3-padding-32">
+                <div class="w3-bar">
+                    <a class="w3-button w3-theme-emerald w3-hover-light_emerald" href="#">1</a>
+                    <a class="w3-button w3-hover-emerald" href="#">2</a>
+                    <a class="w3-button w3-hover-emerald" href="#">3</a>
+                    <a class="w3-button w3-hover-emerald" href="#">4</a>
+                    <a class="w3-button w3-hover-emerald" href="#">5</a>
+                    <a class="w3-button w3-hover-emerald" href="#">&raquo;</a>
+                </div>
+            </div>
+
+            <footer id="myFooter">
+                <div class="w3-container w3-theme-dark_emerald ">
+                    <h4>&copy; 2024 ORA #1, IT4409, SoICT-HUST </h4>
+                </div>
+
+                <div class="w3-container w3-theme-l1">
+                    <p>Design by <a href="https://github.com/GiaHuyJQK1706" target="_blank">Gia-Huy Do</a></p>
+                </div>
+            </footer>
+
+            <!-- END MAIN -->
+        </div>
+
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === "block") {
+                    mySidebar.style.display = "none";
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = "block";
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
