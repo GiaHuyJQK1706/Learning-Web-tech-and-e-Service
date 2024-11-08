@@ -1,0 +1,220 @@
+:root {
+  --active-btn: #00ff80;  
+  --header: #00c060; 
+  --sidebar-background: #00ff80;
+  --footer-up: #00ff80;
+  --table-background: #00ff80;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.container h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--header);
+}
+
+.details {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.details span {
+  font-weight: bold;
+}
+
+.academic-info,
+.skills-info,
+.hobbies-info,
+.projects-info {
+  margin-top: 20px;
+}
+
+.section-header {
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.admin-page-header {
+  font-weight: bold;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--table-background);
+  font-weight: bold;
+}
+
+
+#myFooter {
+  position: relative;
+  /* Can also try fixed if you want the footer to stay visible */
+  bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+.w3-main {
+  min-height: calc(100vh - 200px);
+  /* Adjust depending on the size of your footer */
+  /* padding-bottom: 100px; */
+  /* Space for the footer */
+}
+
+
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.active {
+  color: #000 !important;
+  background-color: #eee !important;
+}
+
+.ERB {
+  color: var(--header);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+.border-3px {
+  border: 3px solid black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(8, minmax(50px, 1fr));
+  grid-template-columns: repeat(15, minmax(15px, 1fr)); /* Cố định 15 cột */
+  width: 100%;
+  border: 1px dashed black;
+}
+
+.subsection-grid-container {
+  display: grid;
+  grid-template-columns: repeat(15, minmax(1px, 1fr)); /* Cố định 15 cột */
+  width: 100%;
+}
+
+.grid-3-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  width: 100%;
+}
+
+.item {
+  border: 1px dashed black;
+}
+
+.ck-toolbar {
+  flex-wrap: wrap !important;
+}
+
+.name-input, layout-input{
+  height: 50px;
+}
+
+.section-header {
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  #myFooter {
+      margin-left: 0!important;
+      margin-right: 0!important;
+  }
+
+  .subsection-grid-container div {
+    grid-column: 1 / -1 !important;
+    margin: 0 !important;
+  }
+
+  .width-80 {
+    width: 60%;
+  }
+}
